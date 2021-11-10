@@ -1,0 +1,54 @@
+.parallax,
+.parallax__layer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.parallax__layer {
+  position: fixed;
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  z-index: 10;
+}
+
+.test {
+  position: absolute;
+  z-index: 12;
+  top: 35%;
+  color: #210002;
+  font-size: 6.5vw;
+  font-family: 'Lato', sans-serif;
+}
+
+#parallax-0 {
+  background-image: url(../../images/parallax0.png);
+  background-color: #ffaf1b;
+}
+#parallax-1 {
+  background-image: url(../../images/parallax1.png);
+}
+#parallax-2 {
+  background-image: url(../../images/parallax2.png);
+}
+#parallax-3 {
+  background-image: url(../../images/parallax3.png);
+}
+#parallax-4 {
+  background-image: url(../../images/parallax4.png);
+}
+#parallax-5 {
+  background-image: url(../../images/parallax5.png);
+}
+#parallax-6 {
+  background-image: url(../../images/parallax6.png);
+}
+#parallax-7 {
+  background-image: url(../../images/parallax7.png);
+}
+#parallax-8 {
+  background-image: url(../../images/parallax8.png);
+}

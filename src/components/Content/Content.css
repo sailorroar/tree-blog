@@ -1,8 +1,11 @@
-.content {
+.maincontent {
+    min-height: 200vh;
     position: relative;
+    width: 96%;
+    z-index: 10;
     background-color: #210002;
     color: #f8ae00;
     font-size: 30px;
     font-family: 'Lato', sans-serif;
-    padding: 3%;
-}
+    padding: 2%;
+ }

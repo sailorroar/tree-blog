@@ -17,11 +17,11 @@ const Header = () => {
 
     return (
         <header className={classes.header} id='header'>
-            <div className={classes.headerWrap}>
+            <div className={classes.headerWrap} id='headerWrap'>
                 <a href="#1">Logo</a>
                 <nav>
                     <ul>
-                        <li id='test'><a href="#1">Home</a></li>
+                        <li><a href="#1">Home</a></li>
                         <li><a href="#1">Trees</a></li>
                         <li><a href="#1">Contact</a></li>
                         <li><a href="#1">Profile</a></li>

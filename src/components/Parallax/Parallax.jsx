@@ -1,27 +1,36 @@
-import classes from './Parallax.module.css'
-import parallax0img from '../../images/parallax0.png'
-import parallax1img from '../../images/parallax1.png'
-import parallax2img from '../../images/parallax2.png'
-import parallax3img from '../../images/parallax3.png'
-import parallax4img from '../../images/parallax4.png'
-import parallax5img from '../../images/parallax5.png'
-import parallax6img from '../../images/parallax6.png'
-import parallax7img from '../../images/parallax7.png'
-import parallax8img from '../../images/parallax8.png'
+import './Parallax.css'
+import $ from 'jquery';
 
 const Parallax = () => {
+
+    $(function () {
+        window.addEventListener("scroll", function () {
+
+            let top = this.scrollY;
+
+            let layers = $(".parallax__layer");
+            let speed;
+            layers.each(function () {
+                speed = $(this).attr('data-speed');
+                let yPos = -(top * speed / 100);
+                $(this).attr('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+            });
+        });
+    });
+    
     return (
-        <div className={classes.parallax}>
-            <div>
-                <img src={parallax0img} alt="parallax0" id="parallax0"></img>
-                <img src={parallax1img} alt="parallax1" id="parallax1"></img>
-                <img src={parallax2img} alt="parallax2" id="parallax2"></img>
-                <img src={parallax3img} alt="parallax3" id="parallax3"></img>
-                <img src={parallax4img} alt="parallax4" id="parallax4"></img>
-                <img src={parallax5img} alt="parallax5" id="parallax5"></img>
-                <img src={parallax6img} alt="parallax6" id="parallax6"></img>
-                <img src={parallax7img} alt="parallax7" id="parallax7"></img>
-                <img src={parallax8img} alt="parallax8" id="parallax8"></img>
+        <div>
+            <div className="parallax">
+                <div className="parallax__layer" id="parallax-0" data-speed="2"></div>
+                <div className="parallax__layer" id="parallax-1" data-speed="5"></div>
+                <div className="parallax__layer" id="parallax-2" data-speed="11"></div>
+                <div className="parallax__layer" id="parallax-3" data-speed="16"></div>
+                <div className="parallax__layer" id="parallax-4" data-speed="26"></div>
+                <div className="parallax__layer" id="parallax-5" data-speed="36"></div>
+                <div className="parallax__layer" id="parallax-6" data-speed="49"></div>
+                <div className="parallax__layer" id="parallax-7" data-speed="69"></div>
+                <div className="test">Tree Blog</div>
+                <div className="parallax__layer" id="parallax-8" data-speed="100"></div>
             </div>
         </div>
     )
