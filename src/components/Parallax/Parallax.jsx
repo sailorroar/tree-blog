@@ -17,10 +17,11 @@ const Parallax = () => {
             });
         });
     });
-    
+
     return (
         <div>
             <div className="parallax">
+                {/* <div className="noneparallax" id="noneparallax"></div> */}
                 <div className="parallax__layer" id="parallax-0" data-speed="2"></div>
                 <div className="parallax__layer" id="parallax-1" data-speed="5"></div>
                 <div className="parallax__layer" id="parallax-2" data-speed="11"></div>

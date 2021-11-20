@@ -1,9 +1,11 @@
+
+/* Parallax */
+
 .parallax,
 .parallax__layer {
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .parallax__layer {
@@ -52,3 +54,19 @@
 #parallax-8 {
   background-image: url(../../images/parallax8.png);
 }
+
+/* Для мобильных устройств */
+
+/* .noneparallax {
+  display: block;
+	background-image: url(../../images/keyart-mobile.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+@media (min-width: 601px){
+  .noneparallax {
+    display: none;
+  }
+} */

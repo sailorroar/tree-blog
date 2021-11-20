@@ -1,5 +1,5 @@
 .maincontent {
-    min-height: 200vh;
+    min-height: 100vh;
     position: relative;
     width: 96%;
     z-index: 10;
@@ -8,4 +8,35 @@
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     padding: 2%;
- }
+}
+
+.photoContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+}
+
+.photoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.photoContainer .photo {
+    margin: 10px;
+}
+
+.buttonLogInContainer {
+    color: #210002;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonLogIn {
+    background-color: #ffaf1b;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+}
